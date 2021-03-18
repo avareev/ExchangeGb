@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeGb", "ExchangeGb\ExchangeGb.csproj", "{54233C51-3166-441C-9C66-9453AFF1D903}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeGb.Tests", "ExchangeGb.Tests\ExchangeGb.Tests.csproj", "{AA08F2B4-0089-41AF-A89A-76FBE10C8B13}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54233C51-3166-441C-9C66-9453AFF1D903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54233C51-3166-441C-9C66-9453AFF1D903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54233C51-3166-441C-9C66-9453AFF1D903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54233C51-3166-441C-9C66-9453AFF1D903}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA08F2B4-0089-41AF-A89A-76FBE10C8B13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA08F2B4-0089-41AF-A89A-76FBE10C8B13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA08F2B4-0089-41AF-A89A-76FBE10C8B13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA08F2B4-0089-41AF-A89A-76FBE10C8B13}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

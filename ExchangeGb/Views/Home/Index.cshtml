@@ -1,0 +1,111 @@
+﻿@model MainViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <div class="row justify-content-between">
+        <div class="col-md-5">
+            <h2>Купить</h2>
+            <form method="post" action="/order/buy">
+                <div class="row">
+                    <div class="col-md-9">
+                        <input name="price" type="number" class="m-1 form-control" min="0.01" step="0.01" placeholder="Цена за шт."/>
+                        <input name="email" type="email" class="m-1 form-control" placeholder="Email"/>
+                        <input name="qty" type="number" class="m-1 form-control" min="1" placeholder="Qty"/>
+                    </div>
+                    <div class="col-md-3 d-flex align-items-center">
+                        <button type="submit" class="btn btn-primary">ОК</button>
+                    </div>
+                </div>
+
+            </form>
+            <h2>Заявки на покупку</h2>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Цена</th>
+                    <th scope="col">Кол-во</th>
+                    <th scope="col">Email</th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var buyOrder in Model.BuyOrders)
+                {
+                    <tr>
+                        <td>@buyOrder.Price</td>
+                        <td>@buyOrder.Qty</td>
+                        <td>@buyOrder.Email</td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+
+        </div>
+        <div class="col-md-5">
+            <h2>Продать</h2>
+            <form method="post" action="/order/sell">
+                <div class="row">
+                    <div class="col-md-9">
+                        <input name="price" type="number" class="m-1 form-control" min="0.01" step="0.01" placeholder="Цена за шт."/>
+                        <input name="email" type="email" class="m-1 form-control" placeholder="Email"/>
+                        <input name="qty" type="number" class="m-1 form-control" min="1" placeholder="Qty"/>
+                    </div>
+                    <div class="col-md-3 d-flex align-items-center" style="display: flex;">
+                        <button type="submit" class="btn btn-primary">ОК</button>
+                    </div>
+                </div>
+            </form>
+            <h2>Заявки на продажу</h2>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Цена</th>
+                    <th scope="col">Кол-во</th>
+                    <th scope="col">Email</th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var sellOrder in Model.SellOrders)
+                {
+                    <tr>
+                        <td>@sellOrder.Price</td>
+                        <td>@sellOrder.Qty</td>
+                        <td>@sellOrder.Email</td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-12">
+            <h2>Завершенные сделки</h2>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Выполнено</th>
+                    <th scope="col">Дата К</th>
+                    <th scope="col">Дата П</th>
+                    <th scope="col">Цена</th>
+                    <th scope="col">Кол-во</th>
+                    <th scope="col">Email К</th>
+                    <th scope="col">Email П</th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var deal in Model.Deals)
+                {
+                    <tr>
+                        <td>@deal.CreatedAt.ToLocalTime()</td>
+                        <td>@deal.BuyOrderDate.ToLocalTime()</td>
+                        <td>@deal.SellOrderDate.ToLocalTime()</td>
+                        <td>@deal.Price</td>
+                        <td>@deal.Qty</td>
+                        <td>@deal.BuyerEmail</td>
+                        <td>@deal.SellerEmail</td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

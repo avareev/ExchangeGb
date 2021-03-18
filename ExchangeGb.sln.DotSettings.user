@@ -1,0 +1,7 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f4c95ded_002D3b53_002D4f11_002D9055_002D20e385173114/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="DealServiceAddSellOrderUseCaseTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::AA08F2B4-0089-41AF-A89A-76FBE10C8B13::.NETCoreApp,Version=v3.1::ExchangeGb.Tests.Services.DealServiceAddSellOrderUseCaseTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::AA08F2B4-0089-41AF-A89A-76FBE10C8B13::.NETCoreApp,Version=v3.1::ExchangeGb.Tests.Services.DealServiceAddBuyOrderUseCaseTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
