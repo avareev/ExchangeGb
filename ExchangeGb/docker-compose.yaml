@@ -3,11 +3,13 @@ services:
   app:
     build: .
     ports:
-      - "5000:80"
+      - "5001:80"
+    restart: unless-stopped
     depends_on:
       - db
   db:
     image: postgres
+    restart: unless-stopped
     volumes:
       - ./db:/docker-entrypoint-initdb.d
     environment:

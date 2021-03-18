@@ -10,6 +10,7 @@ namespace ExchangeGb.Controllers
     /// <summary>
     /// Orders controller. Handles new buy and sell orders
     /// </summary>
+    [Route("order")]
     public class OrderController : Controller
     {
         private readonly IAddSellOrderUseCase _addSellOrderUseCase;
